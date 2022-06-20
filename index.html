@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./tailwind/output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container mx-auto max-w-4xl border border-red-400">
+      <h1 class="text-7xl text-center mt-3">Note Taker</h1>
+      <h2 class="text-green-600 text-3xl text-center mt-5">Add a new note:</h2>
+      <div class="flex space-x-3 mt-3">
+        <label for="note" class="text-xl font-bold">Note:</label>
+        <textarea
+          name="note"
+          id="note"
+          placeholder="Write a new note"
+          class="border border-gray-300 px-2 py-1 flex-grow"
+        ></textarea>
+      </div>
+      <button
+        class="block mx-auto py-2 px-4 bg-green-600 text-white rounded-sm mt-5 focus:outline-green-400"
+      >
+        Add Note
+      </button>
+      <div class="grid"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
